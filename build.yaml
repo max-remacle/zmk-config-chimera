@@ -22,3 +22,5 @@ include:
     shield: chimera_left
   - board: nice_nano_v2
     shield: chimera_right
+  - board: nice_nano_v2
+    shield: settings_reset
