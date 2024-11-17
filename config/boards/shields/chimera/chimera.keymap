@@ -42,7 +42,7 @@
                         bindings = <
    &kp ESC    &kp AT   &kp HASH   &kp DLLR  &kp EQUAL   &kp PRCNT     &kp MINUS   &kp LPAR   &kp RPAR &kp LT  &kp GT &kp BSPC
    &bt TAB &kp GRAVE  &kp LEFT  &kp UP  &kp RIGHT  &kp ENTER  &kp UNDER  &kp LBRC &kp RBRC &kp PIPE &kp COLON &trans
-   &trans  &trans       &trans   &kp DOWN       &trans    &trans   &trans   &kp LBKT   &kp RBKT &trans    &trans &to MOUSE
+   &trans  &trans       &trans   &kp DOWN       &trans    &trans   &trans   &kp LBKT   &kp RBKT &trans    &trans &trans
                                     &to DEFAULT     &kp LALT      &kp SPACE      &to NUMBER
                         >;
                 };
@@ -61,19 +61,19 @@
                         >;
                 };
 
-                mouse_layer {
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |S_UP |   |     |     |M_UP |     |     |      |
-// |      |     |     |     |     |S_DWN|   |     |M_LFT|M_DMN|M_RGH|     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                          |  L1 |L_CLC|   |R_CLC|  L2 |
-                        bindings = <
-   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_UP  &trans  &trans  &mmv MV_SUP  &trans  &trans &trans
-   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_DOWN  &trans  &mmv MV_SLEFT  &mmv MV_SDOWN  &mmv MV_SRIGHT  &trans &trans
-   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                    &to DEFAULT     &mkp LCLK        &mkp RCLK     &to LOWER 
-                        >;
-                };
+//                 mouse_layer {
+// // -----------------------------------------------------------------------------------------
+// // |      |     |     |     |     |S_UP |   |     |     |M_UP |     |     |      |
+// // |      |     |     |     |     |S_DWN|   |     |M_LFT|M_DMN|M_RGH|     |      |
+// // |      |     |     |     |     |     |   |     |     |     |     |     |      |
+// //                          |  L1 |L_CLC|   |R_CLC|  L2 |
+//                         bindings = <
+//    &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_UP  &trans  &trans  &mmv MV_SUP  &trans  &trans &trans
+//    &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_DOWN  &trans  &mmv MV_SLEFT  &mmv MV_SDOWN  &mmv MV_SRIGHT  &trans &trans
+//    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+//                                     &to DEFAULT     &mkp LCLK        &mkp RCLK     &to LOWER 
+//                         >;
+//                 };
 
                 bt_layer {
 // -----------------------------------------------------------------------------------------
