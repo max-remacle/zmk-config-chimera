@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define LOWER   1
@@ -15,11 +15,6 @@
 #define MOUSE   3
 #define BT      4
 
-
-&mmv {
-   time-to-max-speed-ms = <680>;
-   acceleration-exponent=<2>;
-};
 
 / {
         keymap {
@@ -73,8 +68,8 @@
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |  L1 |L_CLC|   |R_CLC|  L2 |
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_UP  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans &trans
-   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_DOWN  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans &trans
+   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_UP  &trans  &trans  &mmv MV_SUP  &trans  &trans &trans
+   &trans  &trans  &trans  &trans  &trans  &kp C_AC_SCROLL_DOWN  &trans  &mmv MV_SLEFT  &mmv MV_SDOWN  &mmv MV_SRIGHT  &trans &trans
    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                     &to DEFAULT     &mkp LCLK        &mkp RCLK     &to LOWER 
                         >;
