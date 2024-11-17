@@ -41,7 +41,7 @@
 //                          |  L1 | ALT |   | SPC |  L3 |
                         bindings = <
    &kp ESC    &kp AT   &kp HASH   &kp DLLR  &kp EQUAL   &kp PRCNT     &kp MINUS   &kp LPAR   &kp RPAR &kp LT  &kp GT &kp BSPC
-   &bt TAB &kp GRAVE  &kp LEFT  &kp UP  &kp RIGHT  &kp ENTER  &kp UNDER  &kp LBRC &kp RBRC &kp PIPE &kp COLON &trans
+   &kp TAB &kp GRAVE  &kp LEFT  &kp UP  &kp RIGHT  &kp ENTER  &kp UNDER  &kp LBRC &kp RBRC &kp PIPE &kp COLON &trans
    &trans  &trans       &trans   &kp DOWN       &trans    &trans   &trans   &kp LBKT   &kp RBKT &trans    &trans &trans
                                     &to DFLT     &kp LALT      &kp SPACE      &to NUMBER
                         >;
