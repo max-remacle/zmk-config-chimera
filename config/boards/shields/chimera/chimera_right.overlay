@@ -1,10 +1,15 @@
 #include "chimera.dtsi"
 
-&default_transform { 
-    col-offset = <6>;
-};
+/ {
+    chosen {
+        zmk,kscan = &kscan;
+    };
 
-&kscan0 {
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+
+        diode-direction = "col2row";
     row-gpios
         = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -20,4 +25,9 @@
         , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         ;
+    };
+};
+
+&default_transform { 
+    col-offset = <6>;
 };
